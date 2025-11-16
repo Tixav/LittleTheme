@@ -1,0 +1,358 @@
+/* by Tixav 2025-11 */
+/* Don't remove this line! */ /* @import url("../../css/legacy.css");*/ /* ---->>>>>>> REPLACED BY blocks.css*/ 
+
+@import url("blocks.css"); /*   */
+@import url("base.css"); /* Don't remove this line! */
+@import url("extras_and_animations.css"); /* Adds visual extras. */
+/*@import url("navigation_main_sidebar.css"); /* This transforms the main menu to a vertical menu on the left. */
+
+:root{
+	
+	--ColorFontName:lightgray;
+	--ColorFontBigtext:lightgray;
+	--ColorFontType:lightslategray;
+	--ColorFontLastUpdate:snow;
+	--ColorDashboard_Block_or_Span3and4:rgb(42 48 92);
+	--ColorDashboard_Block_or_Span3and4_HOVER:#4554ac;
+	--ColorMenuBar:rgb(42 48 92);
+	--ColorSelectorTopLeft:#272766;
+	--ColorSelectorBottomRight:darkslategray;
+	--ColorMenuButton:whitesmoke;
+	--ColorDropdownMenuBorder:gainsboro;
+	--ColorBackgroundMenuButtonTopColor:#030a70;
+	--ColorBackgroundMenuButtonBottomColor:#0e0e0e;
+	--MyIconeSize: 30px;
+	--BkgImage:url("/images/av4.jpg");
+}
+
+body {
+	background: unset !important;
+}
+
+#holder{
+	
+	/* a lot of beautifull pictures of the sky https://unsplash.com/fr/photos/un-avion-volant-dans-le-ciel-au-coucher-du-soleil--N9a_pHRYsk */
+	background: var(--BkgImage);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+
+}
+
+/* Start Unlimited blocks ! */
+.row:before, .row:after{
+	display:contents!important;
+}
+
+.row{
+	display:contents!important;
+}
+/*End Unlimited blocks ! */
+
+
+.container {
+	width: 98vw;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/* For temp blocks */
+.clearfix:before, .clearfix:after {
+	display:contents!important;
+}
+
+.dataTables_wrapper {
+    margin-bottom: 16px;
+}
+
+.btn {
+    border: none;
+    border-radius: 5px;
+}
+
+.btn.btn-default {
+    background: url("../../css/images/img03b.jpg") repeat right top;
+    color: #FFFFFF;
+    text-shadow: none;
+}
+
+.btn.btn-default:disabled {
+    background-image: url("../../css/images/img03bd.png");
+}
+
+.btn.btn-default.active {
+    background-image: url("../../css/images/img03bs.jpg");
+}
+
+.btn-group > .btn {
+    border-radius: 0;
+}
+
+hr {
+  margin: 5px 0;
+}
+
+#img img:hover, 
+#img1 img:hover,
+#img2 img:hover,
+#img3 img:hover
+{
+	transform: scale(1.1);
+    transition: .3s;
+}
+
+
+.span3 {
+    width: 19%;
+}
+
+.span4 {
+    width: 23%;
+}
+
+.colorx{
+	color:purple;
+}
+
+/* Computer */
+@media (min-width: 1200px) {
+    .span4 {
+        width: 18.5%;
+    }
+	
+	.span3 {
+    width: 15%!important;
+	}
+}
+
+/* Pad landscape */
+@media (max-width: 1137px) {
+	body{
+		/* zoom: 90%; */
+	}
+	
+    .hidden-phone {
+        display: none !important;
+    }
+
+}
+
+/* Pad portrait */
+@media (max-width: 767px) {
+	body{
+		padding-right: 0px;
+        padding-left: 0px; 
+	}
+	
+	.navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+		margin-right: 0px!important;
+		margin-left: 0px!important;
+		margin-bottom: 0px !important;
+	}
+	
+	.container {
+		width: 100vw;
+	}
+	
+	/* .container-fluid { */
+		/* padding-right: 10px; */
+		/* padding-left: 0px!important; */
+	/* } */
+	
+    [class*="span4"], .uneditable-input[class*="span"], .row-fluid [class*="span"] {
+        display: block;
+        float: left!important;
+        width: 31%;
+        margin-left: 0.75em;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+	
+	.span3{
+		width:32%;
+	}
+	
+	#lightcontent .selectorlevels {
+		margin-top:-2.6em!important;
+	}
+	
+	.span4 .dimslider {
+		margin-top: -2.1em !important;
+		visibility: visible!important;;
+	}
+	
+	#utilitycontent #status{
+		min-height:3em;
+	}
+
+}
+
+@media (max-width: 400px) {
+	body{
+		padding-right: 0px;
+        padding-left: 0px; 
+	}
+	
+	.navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+		margin-right: 0px!important;
+		margin-left: 0px!important;
+	}
+	
+	.container {
+		width: 100vw;
+	}
+	
+	.container-fluid {
+		padding-right: 10px;
+		padding-left: 0px!important;
+	}
+	
+    [class*="span4"], .uneditable-input[class*="span"], .row-fluid [class*="span"] {
+        display: block;
+        float: left!important;
+        width: 46%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+	
+	.span3{
+		width:46%;
+		float: left!important;		
+	}
+	
+	.selectorlevels .ui-selectmenu-button.ui-widget {
+    /* font-size: 1.1em; */
+    font-size: 1em;
+	}
+	
+	.mobileitem .selectorlevels .ui-selectmenu-button.ui-widget {
+		font-size: 1em;
+		width: 60% !important;
+	}	
+	
+	#lightcontent .selectorlevels {
+		margin-top: -3.6em !important;
+        margin-left: 50px !important;
+        height: 2em;
+        width:50%;
+	}
+	
+	#dashcontent .mobileitem .selectorlevels {
+		height:0;
+		margin-top: -30px!important;
+	}
+	
+	.span3 .dimslider, .span4 .dimslider {
+		visibility:hidden!important;
+	}
+	
+	#tempwidgets .span4, #weatherwidgets .span4,#utilitycontent .span4{
+		width:95%;
+	}
+	
+	#tempwidgets .span4 #itemtablenotype .tr, #weatherwidgets .span4 itemtablenotype .tr, #utilitycontent .span4 itemtablenotype .tr{
+		height:2em;
+	}
+
+}
+
+.container-fluid {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+body .item.statusProtected #lastupdate:after{
+	
+	content:"\f023"!important;
+	font-family: var(--fa-style-family, "Font Awesome 6 Free");
+    font-weight: var(--fa-style, 900);
+	font-style: normal;
+    color: yellow;
+    float: right;
+    margin-right: 1em;
+}
+
+/* Different sort of btnsmall */
+[class*="btnsmall"] {
+
+	border-radius: 0px!important;
+	margin-left: 2%;
+}
+
+/* Menu horizontal vertical */
+.navbar .nav li a {
+   
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    background-color: #121a4a;
+	color:var(--ColorMenuButton);
+    background-image: -webkit-linear-gradient(top, var(--ColorBackgroundMenuButtonTopColor), var(--ColorBackgroundMenuButtonBottomColor));
+}
+
+.navbar .nav li a:hover {
+    background-image: -webkit-linear-gradient(top, var(--ColorBackgroundMenuButtonBottomColor), var(--ColorBackgroundMenuButtonTopColor));
+}
+
+
+.options img {
+    float: left;
+    margin-top: 2.0em;
+    margin-left: -8px;
+    margin-right: -19px;
+}
+
+.navbar .nav .dropdown-menu {
+    border: unset;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    background-image: unset;
+	background-color: var(--ColorDropdownMenu);
+
+}
+
+
+.navbar-inverse .navbar-inner {
+    background-color: var(--ColorMenuBar);
+}
+
+
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    
+    /* background: #f58400 url("images/ui-bg_inset-soft_30_f58400_1x100.png") 50% 50% repeat-x; */
+    background:var(--ColorDashboard_Block_or_Span3and4_HOVER) !important;
+    color: #fff;
+	border: 1px solid whitesmoke;
+}
+
+#name{
+	font-size:110%!important;
+}
+
+#bigtext{
+	font-size:110%!important;
+}
+
+
+
+
+
+
+	
+[class*="span"] {
+    float: left;
+    min-height: 1px;
+    margin-left: 14px;
+    /* color: var(--FontColor); */
+    background-color: var(--ColorDashboard_Block_or_Span3and4);
+    margin: 5px 5px 5px 5px;
+}
+
+[class*="span"]:hover {
+	border-color: #2B2C74;
+	background-color:var(--ColorDashboard_Block_or_Span3and4_HOVER)!important;
+}
