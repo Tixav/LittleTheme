@@ -190,7 +190,7 @@ body table[id*='itemtabl'] #status {
 	margin-top:0.4em;
     font-size: 80%;
 	margin-left: calc( var(--MyIconeSize) + 10px)!important; /* MyIconeSize + 10 */
-	/* background-color:pink; */
+	color:var(--ColorFontStatus);
 }
 
 #dashcontent #status{
