@@ -40,10 +40,10 @@ function ChangeNameByIcon(as){
 	Besause each time data is coming all the back is redraw ! so it is work just for a time for Edit button in temperature tab, and not at all 
 	for the other button because no data-i18n !
 	*/
-	if( as==undefined) {
+	/*if( as==undefined) {
 		console.log("Tab undefined");
 		return;
-	}
+	}*/
 	console.log("ChangeNameByIcon:"+as);
 	$('body table[id*="itemtabl"] tr td.options a[data-i18n="Log"]').addClass("fa-solid fa-table");
 	$('body table[id*="itemtabl"] tr td.options a[data-i18n="Log"]').text("");
