@@ -280,7 +280,12 @@ body .item.statusProtected #lastupdate:after{
 
 	border-radius: 0px!important;
 	margin-left: 2%;
+		
 }
+
+
+
+
 
 /* Menu horizontal vertical */
 .navbar .nav li a {
@@ -357,3 +362,44 @@ body .item.statusProtected #lastupdate:after{
 	border-color: #2B2C74;
 	background-color:var(--ColorDashboard_Block_or_Span3and4_HOVER)!important;
 }
+
+body table[id*="itemtabl"] tr td.options a[data-i18n="Log"]:before{
+content:"\f0ce"!important;
+	font-family: var(--fa-style-family, "Font Awesome 6 Free");
+    font-weight: var(--fa-style, 900);
+	}
+
+body table[id*="itemtabl"] tr td.options a[data-i18n="Edit"]:before{
+content:"\f044"!important;
+	font-family: var(--fa-style-family, "Font Awesome 6 Free");
+    font-weight: var(--fa-style, 900);
+	}
+
+body table[id*="itemtabl"] tr td.options a[data-i18n="Timers"]:before{
+content:"\f017"!important;
+	font-family: var(--fa-style-family, "Font Awesome 6 Free");
+    font-weight: var(--fa-style, 900);
+	}
+	
+body table[id*="itemtabl"] tr td.options a[data-i18n="Notifications"]:before{
+content:"\f0e0"!important;
+	font-family: var(--fa-style-family, "Font Awesome 6 Free");
+    font-weight: var(--fa-style, 900);
+	}
+	
+body table[id*="itemtabl"] tr td.options a[data-i18n="Reset"]:before{
+content:"\e509"!important;
+	font-family: var(--fa-style-family, "Font Awesome 6 Free");
+    font-weight: var(--fa-style, 900);
+	}
+	
+body table[id*="itemtabl"] tr td.options a[data-i18n="Forecast"]:before{
+content:"\f743"!important;
+	font-family: var(--fa-style-family, "Font Awesome 6 Free");
+    font-weight: var(--fa-style, 900);
+	}
+
+body table[id*="itemtabl"] tr td.options a[data-i18n="Log"]{
+/* font-size:0; */
+	}
+

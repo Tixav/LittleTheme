@@ -8,8 +8,11 @@ var DzTabS = {'LightSwitches':'lightcontent',
 // get the end of url like #/Dashboard
 function GetTabName(){
 	
-	var hash = location.hash.split('/')
-	var tabselected=hash[hash.length-1];
+	var hashSlash = location.hash.split('/')
+	var tabselected=hashSlash[1];
+	var hashQuestion = tabselected.split('?')
+	var tabselected=hashQuestion[0];
+	
 	return tabselected;
 }
 
@@ -19,18 +22,24 @@ $( document ).ready(function() {
 	setTimeout(function() {
 		// console.log("On load tab active:"+DzTabS[GetTabName()]);
 		ChangeNameByIcon(DzTabS[GetTabName()]);
+		
 	}, 1000);
 	
 });
 
-//
+
 $(window).on('hashchange', function(e){
 	// console.log("Tab change:"+DzTabS[GetTabName()]);
 	setTimeout(function () {
 		ChangeNameByIcon(DzTabS[GetTabName()]);
-	}, 40);
+		// setTimeout(function () {
+		// ChangeNameByIcon(DzTabS[GetTabName()]);
+		// }, 100);
+	}, 10);
 	
 });
+
+
 
 function ChangeNameByIcon(as){
 	/*
@@ -40,27 +49,28 @@ function ChangeNameByIcon(as){
 	Besause each time data is coming all the back is redraw ! so it is work just for a time for Edit button in temperature tab, and not at all 
 	for the other button because no data-i18n !
 	*/
-	if( as==undefined) {
-		console.log("Tab undefined");
-		return;
-	}
+	// if( as==undefined) {
+		// ChangeNameByIcon("lightcontent");
+		// console.log("Tab undefined");
+		// return;
+	// }
 	console.log("ChangeNameByIcon:"+as);
-	$('body table[id*="itemtabl"] tr td.options a[data-i18n="Log"]').addClass("fa-solid fa-table");
+	// $('body table[id*="itemtabl"] tr td.options a[data-i18n="Log"]').addClass("fa-solid fa-table");
 	$('body table[id*="itemtabl"] tr td.options a[data-i18n="Log"]').text("");
 	
-	$('body table[id*="itemtabl"] tr td.options a[data-i18n="Edit"]').addClass("fa-solid fa-pen-to-square");
+	// $('body table[id*="itemtabl"] tr td.options a[data-i18n="Edit"]').addClass("fa-solid fa-pen-to-square");
 	$('body table[id*="itemtabl"] tr td.options a[data-i18n="Edit"]').text("");
 	
-	$('body table[id*="itemtabl"] tr td.options a[data-i18n="Timers"]').addClass("fa-solid fa-clock");
+	// $('body table[id*="itemtabl"] tr td.options a[data-i18n="Timers"]').addClass("fa-solid fa-clock");
 	$('body table[id*="itemtabl"] tr td.options a[data-i18n="Timers"]').text("");
 	
-	$('body table[id*="itemtabl"] tr td.options a[data-i18n="Notifications"]').addClass("fa-solid fa-envelope");
+	// $('body table[id*="itemtabl"] tr td.options a[data-i18n="Notifications"]').addClass("fa-solid fa-envelope");
 	$('body table[id*="itemtabl"] tr td.options a[data-i18n="Notifications"]').text("");
 	
-	$('body table[id*="itemtabl"] tr td.options a[data-i18n="Reset"]').addClass("fa-solid fa-house-circle-check");
+	// $('body table[id*="itemtabl"] tr td.options a[data-i18n="Reset"]').addClass("fa-solid fa-house-circle-check");
 	$('body table[id*="itemtabl"] tr td.options a[data-i18n="Reset"]').text("");
 	
-	$('body table[id*="itemtabl"] tr td.options a[data-i18n="Forecast"]').addClass("fa-solid fa-cloud-sun-rain");
+	// $('body table[id*="itemtabl"] tr td.options a[data-i18n="Forecast"]').addClass("fa-solid fa-cloud-sun-rain");
 	$('body table[id*="itemtabl"] tr td.options a[data-i18n="Forecast"]').text("");
 	
 	
