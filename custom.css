@@ -24,6 +24,7 @@
 	--ColorBackgroundMenuButtonBottomColor:#0e0e0e;
 	--MyIconeSize: 30px;
 	--BkgImage:url("/images/av4.jpg");
+	--ColorBackgroundLittleButtonOption:#40a2cf;
 }
 
 body {
@@ -275,14 +276,37 @@ body .item.statusProtected #lastupdate:after{
     margin-right: 1em;
 }
 
-/* Different sort of btnsmall */
+/* Different sort of btnsmall for .option */
 [class*="btnsmall"] {
 
 	border-radius: 0px!important;
 	margin-left: 2%;
-		
+	visibility:hidden;
+	width:12%;
+	margin-left: -1%!important;
 }
 
+[class*="btnsmall"]:before {
+
+    border-radius: 0px !important;
+    /* margin-left: 2%; */
+    visibility: visible;
+    /* font-size: 1em; */
+    display: inline-block;
+    /* height: 1.60em; */
+    padding: 0.1em 0.6em 0.1em 0.6em;
+    margin-left: 2%;
+    border-radius: 0px;
+    /* line-height: 1.60em; */
+    text-decoration: none;
+    text-transform: none;
+    font-size: 1em;
+    color: #FFFFFF;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--ColorBackgroundLittleButtonOption);
+		
+}
 
 
 
@@ -367,36 +391,42 @@ body table[id*="itemtabl"] tr td.options a[data-i18n="Log"]:before{
 content:"\f0ce"!important;
 	font-family: var(--fa-style-family, "Font Awesome 6 Free");
     font-weight: var(--fa-style, 900);
+	
 	}
 
 body table[id*="itemtabl"] tr td.options a[data-i18n="Edit"]:before{
 content:"\f044"!important;
 	font-family: var(--fa-style-family, "Font Awesome 6 Free");
     font-weight: var(--fa-style, 900);
+	
 	}
 
 body table[id*="itemtabl"] tr td.options a[data-i18n="Timers"]:before{
 content:"\f017"!important;
 	font-family: var(--fa-style-family, "Font Awesome 6 Free");
     font-weight: var(--fa-style, 900);
+	
 	}
 	
 body table[id*="itemtabl"] tr td.options a[data-i18n="Notifications"]:before{
 content:"\f0e0"!important;
 	font-family: var(--fa-style-family, "Font Awesome 6 Free");
     font-weight: var(--fa-style, 900);
+	
 	}
 	
 body table[id*="itemtabl"] tr td.options a[data-i18n="Reset"]:before{
 content:"\e509"!important;
 	font-family: var(--fa-style-family, "Font Awesome 6 Free");
     font-weight: var(--fa-style, 900);
+	
 	}
 	
 body table[id*="itemtabl"] tr td.options a[data-i18n="Forecast"]:before{
 content:"\f743"!important;
 	font-family: var(--fa-style-family, "Font Awesome 6 Free");
     font-weight: var(--fa-style, 900);
+	
 	}
 
 body table[id*="itemtabl"] tr td.options a[data-i18n="Log"]{
