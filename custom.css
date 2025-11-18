@@ -368,7 +368,11 @@ body .item.statusProtected #lastupdate:after{
 }
 
 
+/* sove the problem with some background popup are transparent ! */
+.display{
 
+background-color:#11213d	
+}
 
 
 
