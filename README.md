@@ -8,7 +8,7 @@ In the \LittleTheme\custom.css
 
 you can change many colors
 :root{
-  --ColorFontName:lightgray;
+	--ColorFontName:lightgray;
 	--ColorFontBigtext:lightgray;
 	--ColorFontType:lightslategray;
 	--ColorFontLastUpdate:snow;
@@ -23,4 +23,5 @@ you can change many colors
 	--ColorBackgroundMenuButtonBottomColor:#0e0e0e;
 	--MyIconeSize: 30px;
 	--BkgImage:url("/images/av4.jpg");
-}
+
+	}
