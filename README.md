@@ -25,3 +25,7 @@ you can change many colors
 	--BkgImage:url("/images/av4.jpg");
 
 	}
+	temperature/weather log chart icon
+	utility log chart icon except for text/alert
+	<img width="709" height="328" alt="image" src="https://github.com/user-attachments/assets/ea8967a3-e396-45d1-86fa-5a60c0383197" />
+
