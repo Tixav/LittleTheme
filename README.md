@@ -8,7 +8,7 @@ In the \LittleTheme\custom.css
 
 you can change many colors
 :root
-	--ColorFontName:lightgray;
+	--ColorFontName:lightgray;\r\n
 	--ColorFontBigtext:lightgray;
 	--ColorFontType:lightslategray;
 	--ColorFontLastUpdate:snow;
