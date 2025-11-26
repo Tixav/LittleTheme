@@ -341,6 +341,7 @@ body .item.statusProtected #lastupdate:after{
     border-radius: 0px;
     background-image: unset;
 	background-color: var(--ColorDropdownMenu);
+	background-color: darkgrey;
 
 }
 
@@ -391,8 +392,19 @@ background-color:#11213d
 	background-color:var(--ColorDashboard_Block_or_Span3and4_HOVER)!important;
 }
 
+/* log table */
 body table[id*="itemtabl"] tr td.options a[data-i18n="Log"]:before{
 content:"\f0ce"!important;
+	font-family: var(--fa-style-family, "Font Awesome 6 Free");
+    font-weight: var(--fa-style, 900);
+	
+	}
+
+/* Log chart but in utility except for Alert & text device*/
+body #tempwidgets table[id*="itemtabl"] tr td.options a[data-i18n="Log"]:before,
+body #weatherwidgets table[id*="itemtabl"] tr td.options a[data-i18n="Log"]:before,
+body #utilitycontent table[id*="itemtabl"] tr:not(:has(td[data-search*="Alert"]), :has(td[data-search*="Text"])) td.options a[data-i18n="Log"]:before{
+content:"\f201"!important;
 	font-family: var(--fa-style-family, "Font Awesome 6 Free");
     font-weight: var(--fa-style, 900);
 	
@@ -433,7 +445,7 @@ content:"\f743"!important;
 	
 	}
 
-body table[id*="itemtabl"] tr td.options a[data-i18n="Log"]{
-/* font-size:0; */
-	}
-
+.toto{
+	
+	background-color:green!important;
+}
